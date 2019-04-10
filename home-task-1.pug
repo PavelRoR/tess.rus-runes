@@ -1,0 +1,24 @@
+-var head_url = 'https://tess.mastervision.su/russian-runes/home-task-1/';
+-var head_title = '«Создание энергетического шара»';
+-var head_description = '1 домашнее задание от Татьяны Тэсс';
+-var styles = '../css/bonus.css';
+-var fb_content = '2030481470529055'
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head_in
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/bonus/header
+		section#main
+			.container
+				p.pre= head_description
+				h1.main_title= head_title
+				h2.main_subtitle Старт интенсива: 29 апреля, в 19:00 мск
+				.video_wrapper.main_video_wrapper
+					.iframe_shadow
+					iframe(src="https://youtube.com/embed/RsSY0NBBKBQ?rel=0&autoplay=1" allowfullscreen)
+		include pug/bonus/feedback
+		include pug/bonus/footer
+		include pug/scripts/body_bottom_scripts
