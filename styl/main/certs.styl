@@ -1,0 +1,42 @@
+#certs
+	padding 70px 0
+.cert
+	position: relative;
+	width: 100%
+	max-width: 374px;
+	height: 458px;
+	display block
+	margin 0 auto 30px
+	border: 5px solid #7380c9
+	overflow hidden
+	transition: all .2s ease
+	&:after
+		content:  ''
+		display block
+		width 100%
+		height 100%
+		position: absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		background-color: rgba(36,49,205,.44)
+		background-image url(../img/zoom.png)
+		background-repeat no-repeat
+		background-position: center
+		opacity 0
+	&:hover
+		box-shadow: 0 5px 21px 0 rgba(36,49,205,.75)
+		&:after
+			opacity 1
+.cert_img
+	width 100%
+	height 100%
+	object-fit: cover
+	object-position: center
+.cert_img_left
+	object-position: center left -8px
+.cert_img_right
+	object-position: center right -8px
+.certs_runes
+	margin-top: 50%
