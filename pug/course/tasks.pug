@@ -1,0 +1,36 @@
+section#tasks
+	.container
+		h3.general_title.general_title_tasks Записи и домашние задания интенсива
+		.days
+			.lesson_back_1
+			.lesson_back_2
+			ul.lessons_buttons
+				li Занятие 1
+				li Занятие 2
+				li Занятие 3
+			.lessons_container
+				.day
+					h4.day_title День 1
+					.video_wrapper.video_wrapper_videos
+						iframe(src="https://youtube.com/embed/C_Ca1uNyxPo?rel=0" allowfullscreen)
+					p.video_text Занятие состоится 29.04.19, в 19:00 мск
+					p.video_text запись занятия появится здесь 30.04.19, после 13:00 мск
+				.day
+					h4.day_title День 2
+					p.video_text Занятие состоится 29.04.19, в 19:00 мск
+					p.video_text запись занятия появится здесь 30.04.19, после 13:00 мск
+				.day
+					h4.day_title День 3
+					p.video_text Занятие состоится 29.04.19, в 19:00 мск
+					p.video_text запись занятия появится здесь 30.04.19, после 13:00 мск
+		h3.general_title.feedback_general_title Ваши ответы и вопросы к Татьяне пишите 
+			span в формах ниже:
+		.row
+			.col-md-6.col-sm-6
+				#vk
+					#vk_comments
+					script(type="text/javascript")
+						| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+			.col-md-6.col-sm-6
+				#fb
+					.fb-comments(data-href= head_url data-width="100%" data-numposts="15" data-order-by="reverse_time")

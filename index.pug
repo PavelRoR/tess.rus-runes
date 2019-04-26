@@ -1,6 +1,6 @@
 -var head_url = 'https://tess.mastervision.su/russian-runes/';
 -var head_title = '«Русские руны. Научитесь видеть то, что недоступно другим»';
--var head_description = 'Бесплатный 2-хдневный интенсив от Татьяны Тэсс';
+-var head_description = 'Бесплатный 3-хдневный интенсив от Татьяны Тэсс';
 -var head_img = 'https://tess.mastervision.su/russian-runes/img/banner.jpg';
 -var styles = 'css/styles.css';
 
@@ -22,8 +22,8 @@ html(lang="ru")
 		include pug/main/last
 		include pug/main/footer
 		include pug/main/scripts
-		<!--BEGIN JIVOSITE CODE-->
-		//script
-			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
-		<!--END JIVOSITE CODE-->
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+		script(type='text/javascript')
+			| (function(){ var widget_id = '3bquBAv1EK';var d=document;var w=window;function l(){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);} if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);} else{w.addEventListener('load',l,false);}}})();
+		<!-- {/literal} END JIVOSITE CODE -->
 		include pug/scripts/body_bottom_scripts

@@ -1,0 +1,133 @@
+@font-face {
+	font-family: 'AvenirNextCyr';
+	src: url('../fonts/AvenirNextCyr.eot');
+	src: url('../fonts/AvenirNextCyr.eot') format('embedded-opentype'),
+		 url('../fonts/AvenirNextCyr.woff2') format('woff2'),
+		 url('../fonts/AvenirNextCyr.woff') format('woff'),
+		 url('../fonts/AvenirNextCyr.ttf') format('truetype'),
+		 url('../fonts/AvenirNextCyr.svg#AvenirNextCyr') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'YanoneKaffeesatz';
+	src: url('../fonts/YanoneKaffeesatz.eot');
+	src: url('../fonts/YanoneKaffeesatz.eot') format('embedded-opentype'),
+		 url('../fonts/YanoneKaffeesatz.woff2') format('woff2'),
+		 url('../fonts/YanoneKaffeesatz.woff') format('woff'),
+		 url('../fonts/YanoneKaffeesatz.ttf') format('truetype'),
+		 url('../fonts/YanoneKaffeesatz.svg#YanoneKaffeesatz') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'YanoneKaffeesatzBold';
+	src: url('../fonts/YanoneKaffeesatzBold.eot');
+	src: url('../fonts/YanoneKaffeesatzBold.eot') format('embedded-opentype'),
+		 url('../fonts/YanoneKaffeesatzBold.woff2') format('woff2'),
+		 url('../fonts/YanoneKaffeesatzBold.woff') format('woff'),
+		 url('../fonts/YanoneKaffeesatzBold.ttf') format('truetype'),
+		 url('../fonts/YanoneKaffeesatzBold.svg#YanoneKaffeesatzBold') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import '../css/_css/bootstrap.min.css'
+@import '../css/_css/flipclock.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 18px
+	font-family: 'YanoneKaffeesatz', sans-serif
+	color: rgb(0, 0, 0);
+a
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video_wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.button
+	display block
+	border 1px solid rgb(25, 10, 12);
+	border-radius: 5px;
+	width: 100%
+	max-width: 366px;
+	height: 71px;
+	line-height: 69px;
+	background-color: rgb(223, 193, 148)
+	text-align: center
+	text-decoration: none
+	margin 0 auto
+	color: rgb(0, 0, 0);
+	&:focus
+		text-decoration: none
+		color rgb(0,0,0)
+	&:hover
+		text-decoration: none
+		color: rgb(0,0,0)
+		background-color: rgb(205,171,119)
+.general_title
+	text-align: center
+	font-size: 30px;
+	font-family: "YanoneKaffeesatzBold", sans-serif;
+	line-height: 1.833;
+	margin-bottom: 50px
+.general_title_white
+	color rgb(255,255,255)
+
+@import 'main/header'
+@import 'course/main'
+@import 'course/get'
+@import 'course/plan'
+@import 'course/for'
+@import 'course/prices'
+@import 'course/tasks'
+@import 'bonus/footer'
+@import 'course/medias'

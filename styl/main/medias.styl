@@ -24,6 +24,8 @@
 		padding-left: 22px
 	.pre
 		font-size: 18px
+	#main .container::before
+		right -300px
 	.main_title
 		margin 0 0 5px
 		font-size: 48px
@@ -56,6 +58,11 @@
 	#main
 		padding 30px 0 40px
 		background-position:  left 32.5% center
+	#main .container::before
+		left 0
+		right 0
+		margin 0 auto
+		bottom: -100px
 	.main_title
 		line-height: 45px
 	.main_text:last-of-type
@@ -86,6 +93,8 @@
 	.day_container_1
 		background-position: center right 55px, center right -245px
 	.day_container_2
+		background-position: center right 55px, center right -245px
+	.day_container_3
 		background-position: center right 55px, center right -245px
 	#get
 		padding 40px 0 0
@@ -118,6 +127,8 @@
 	#main
 		background-image: none
 		text-align: center
+	#main .container::before
+		content: none
 	.iframe_shadow
 		display: none
 	.for_wrapper_left
@@ -131,7 +142,7 @@
 	.day_container
 		padding 140px 20px 20px
 	.day_container
-		background-position: top 20px center, center top -280px
+		background-position: top 20px center, center top -330px
 		background-size: 80px, contain
 	.day_list
 		max-width 100%
@@ -215,6 +226,10 @@
 		background-position: top 20px center
 	.day_container_2
 		background-image: url("../img/day_2_img.png")
+		background-repeat: no-repeat
+		background-position: top 20px center
+	.day_container_3
+		background-image: url("../img/day_3_img.png")
 		background-repeat: no-repeat
 		background-position: top 20px center
 	.day_list
