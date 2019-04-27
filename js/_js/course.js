@@ -1,9 +1,19 @@
 //@prepros-prepend jquery-2.1.1.min.js
 //@prepros-prepend flipclock.min.js
 
-
-/* Якорь */
 $(document).ready(function () {
+	$(function () {
+		var isIE = false || !!document.documentMode;
+		
+        if (isIE) {
+			var head  = document.getElementsByTagName("head")[0];
+            var link  = document.createElement("link");
+            link.rel  = "stylesheet";
+            link.href = "../css/course_ie.css";
+            head.appendChild(link);
+        }
+    });
+	/* Якорь */
 	$(function () {
 		$("a[href='#prices'], a[href='#tasks']").click(function (h) {
 			h.preventDefault();
